@@ -1,0 +1,67 @@
+@use "general" as general;
+
+.hero {
+  background: general.$primary-blue;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0% 100%);
+  .hero__wrap {
+    margin: auto;
+    width: 95%;
+    height: 685px;
+
+    display: flex;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .hero-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 45%;
+      color: #fff;
+      .hero-texts__title {
+        margin: 0;
+        font-size: calc(45 / 16 * 1rem);
+      }
+      .hero-texts__description {
+        font-size: calc(18 / 16 * 1rem);
+        line-height: 30px;
+      }
+      .hero-texts__wrap {
+        display: flex;
+        gap: 20px;
+        .hero__cta {
+          padding: 15px 20px;
+          color: inherit;
+          font-size: calc(18 / 16 * 1rem);
+          font-weight: 400;
+          text-decoration: none;
+          border: 2px solid #fff;
+          border-radius: 7px;
+        }
+        .hero__cta--main {
+          background: #fff;
+          color: general.$primary-blue;
+        }
+        .hero__cta--second {
+          &:hover {
+            background: general.$secondary-blue;
+          }
+        }
+      }
+    }
+
+    .hero-figure {
+      margin: 0;
+      width: 45%;
+      .hero-figure__img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        object-fit: cover;
+      }
+    }
+  }
+}

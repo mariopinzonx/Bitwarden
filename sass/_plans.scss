@@ -1,0 +1,213 @@
+@use "general" as general;
+
+.plans {
+  .plans-header {
+    padding-top: 70px;
+    background: #edf2f7;
+    text-align: center;
+    .plans-header__wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .plans__title {
+        font-size: general.$fontSize-pt;
+      }
+      .plan-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        .plan-buttons__item {
+          position: relative;
+          transform: translateY(1px);
+          padding: 22px 50px;
+          background: transparent;
+
+          font-size: calc(25 / 16 * 1rem);
+
+          border-left-color: transparent;
+          border-left-width: 1px;
+
+          border-top-color: transparent;
+          border-top-width: 1px;
+
+          border-right-color: transparent;
+          border-right-width: 1px;
+
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+
+          border-bottom-width: 0;
+
+          cursor: pointer;
+        }
+        .plan-buttons__item.active {
+          color: general.$primary-blue;
+          background: #fff;
+
+          border-left-color: general.$primary-blue;
+          border-left-width: 1px;
+
+          border-top-color: general.$primary-blue;
+          border-top-width: 1px;
+
+          border-right-color: general.$primary-blue;
+          border-right-width: 1px;
+
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+      }
+    }
+  }
+
+  .plans-body {
+    padding: 50px 0;
+    border-top: 1px solid #000;
+    .plans__notice {
+      display: block;
+      font-size: calc(15 / 16 * 1rem);
+      text-align: center;
+    }
+
+    .plan-cards {
+      padding-top: 60px;
+      .plan-cards__wrap {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        .plan-card {
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+          .plan-card__cta {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 7px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            &:hover {
+              .plan__btn {
+                background: general.$secondary-blue;
+              }
+            }
+            .plan-card__title {
+              margin: 0;
+              padding: 25px 0;
+              background: #edf2f7;
+              color: general.$secondary-dark-blue;
+              font-size: calc(22 / 16 * 1rem);
+              font-weight: 400;
+            }
+            .plan-price {
+              .plan-price__total {
+                margin: 0;
+                font-size: calc(65 / 16 * 1rem);
+                sup {
+                  font-size: calc(35 / 16 * 1rem);
+                  font-weight: 400;
+                }
+                sub {
+                  font-size: calc(20 / 16 * 1rem);
+                  font-weight: 400;
+                }
+              }
+              .plan-price__description {
+                margin: 0;
+                font-size: calc(17 / 16 * 1rem);
+              }
+            }
+            .plan-card__description {
+              align-self: center;
+              width: 95%;
+              font-size: calc(18 / 16 * 1rem);
+              line-height: 30px;
+            }
+            .plan-card__notice {
+              font-size: calc(14 / 16 * 1rem);
+            }
+            .plan__btn {
+              margin-top: auto;
+              padding: 10px 0;
+              background: general.$primary-blue;
+              color: #fff;
+              font-size: calc(22 / 16 * 1rem);
+              border: none;
+              border-radius: 5px;
+              transition: ease .3s;
+            }
+          }
+        }
+      }
+    }
+
+    .business-plans {
+      .plan-card {
+        width: 37%;
+        min-height: 525px;
+      }
+    }
+
+    .personal-plans {
+      display: none;
+      .personal-plans__wrap {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+
+        .personal-plans-category {
+          width: 45%;
+
+          .line {
+            position: relative;
+            margin: 0 auto 45px auto;
+            width: 50%;
+            height: 30px;
+            border-top: 5px solid general.$primary-blue;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-left: 5px solid general.$primary-blue;
+            border-right: 5px solid general.$primary-blue;
+            .line__text {
+              display: inline-block;
+              padding: 0 10px;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              transform: translate(-50%, -15px);
+              color: general.$primary-blue;
+              font-size: calc(25 / 16 * 1rem);
+              background: #fff;
+            }
+          }
+
+          .plan-cards__wrap {
+            width: 100%;
+            .plan-card {
+              width: 50%;
+              min-height: 620px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .plans-footer {
+    text-align: center;
+    padding: 25px 0 60px 0;
+    .plans__cta {
+      display: inline-block;
+      padding: 15px 25px;
+      color: general.$primary-blue;
+      text-decoration: none;
+      font-size: calc(18 / 16 * 1rem);
+      font-weight: 500;
+      border: 2px solid general.$primary-blue;
+      border-radius: 5px;
+    }
+  }
+}

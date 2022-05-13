@@ -1,0 +1,27 @@
+@use "general" as general;
+
+.notice {
+  padding: 65px 0;
+  .notice__wrap {
+    text-align: center;
+    .notice-description {
+      display: inline-block;
+      padding: 40px 50px;
+      color: inherit;
+      font-size: calc(17 / 16 * 1rem);
+      text-decoration: none;
+      background: rgb(245, 245, 245);
+      border-radius: 2px;
+      .notice-description__wrap {
+        b {
+          color: general.$primary-blue;
+        }
+        .color {
+          display: inline-block;
+          margin-left: 15px;
+          color: general.$primary-blue;
+        }
+      }
+    }
+  }
+}

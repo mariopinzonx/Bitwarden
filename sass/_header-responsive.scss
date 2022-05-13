@@ -1,0 +1,109 @@
+@use "general" as general;
+
+@media screen and (max-width: 1280px) {
+  .header {
+    .header__wrap {
+      .nav {
+        .brand-link {
+          display: none;
+        }
+        .brand-link--logo {
+          display: block;
+        }
+      }
+    }
+
+    .header-search {
+      .form {
+        width: 95%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    .header__wrap {
+      .nav {
+        justify-content: space-between;
+        .brand-link {
+          display: block;
+        }
+        .brand-link--logo {
+          display: none;
+        }
+        .nav__wrap {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          background: general.$secondary-blue;
+          transition: all ease 0.3s;
+          .nav-bar {
+            width: 100%;
+            padding: 15px 0 40px 15px;
+            flex-direction: column;
+            .nav-bar__item {
+              width: 100%;
+              .nav-bar__link {
+                display: block;
+                width: 100%;
+              }
+            }
+            .nav-bar__item--vertical {
+              display: block;
+            }
+            .nav-bar__search-btn {
+              display: none;
+            }
+          }
+          .nav-bar-buttons {
+            display: none;
+          }
+        }
+        .nav__wrap.active {
+          height: 525px;
+        }
+        .nav-buttons {
+          display: block;
+          .nav-buttons__btn {
+            padding: 0;
+            color: #fff;
+            font-size: calc(22 / 16 * 1rem);
+            background: none;
+            border: none;
+            cursor: pointer;
+          }
+          .nav-buttons__btn:nth-child(1) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    .header-search {
+      width: 100%;
+      padding: 0;
+      .form {
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+        font-size: 1rem;
+        border-radius: 0%;
+
+        .form__wrap {
+          gap: 10px;
+          .form__btn {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 455px) {
+  .footer {
+    .footer-bottom {
+      .footer-copyright {
+        span,
+        a {
+          font-size: calc(12 / 16 * 1rem);
+        }
+      }
+
+      .footer-social-media {
+        gap: 20px;
+        flex-wrap: wrap;
+        .footer-social-media__link {
+          font-size: calc(25 / 16 * 1rem);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+  .discover {
+    .discover__wrap {
+      width: 100%;
+      .discover-article {
+        width: 100%;
+      }
+      .discover-items {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .discover {
+    .discover__wrap {
+      .discover-article {
+        .discover-article__description {
+          font-size: calc(18 / 16 * 1rem);
+        }
+      }
+    }
+  }
+}

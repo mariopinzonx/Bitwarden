@@ -1,0 +1,14 @@
+@media screen and (max-width: 991px) {
+  .notice {
+    .notice__wrap {
+      .notice-description {
+        .notice-description__wrap {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 15px;
+        }
+      }
+    }
+  }
+}

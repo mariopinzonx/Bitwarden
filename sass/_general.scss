@@ -1,0 +1,36 @@
+$primary-blue: #175ddc;
+$secondary-blue: #1252a3;
+$secondary-dark-blue: #1a3b66;
+$accent-green: #26ff75;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+.container {
+  width: 95%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+// ----- Primary Title -----
+$fontSize-pt: calc(32 / 16 * 1rem);
+$font-weight-g: 700;
+
+// ----- Secondary Title -----
+$fontSize-st: calc(27 / 16 * 1rem);
+
+// @media screen and (max-width: 388px) {
+//   .container {
+//     width: 100%;
+//     max-width: 100%;
+//   }
+// }

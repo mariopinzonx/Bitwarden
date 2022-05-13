@@ -1,0 +1,72 @@
+@use "general" as general;
+
+.discover {
+  padding: 90px 0;
+  background: #edf2f7;
+  text-align: center;
+  .discover__wrap {
+    margin: auto;
+    width: 80%;
+
+    .discover-article {
+      margin: auto;
+      width: 65%;
+
+      .discover-article__title {
+        margin: 0 0 30px 0;
+        font-size: general.$fontSize-pt;
+      }
+
+      .discover-article__description {
+        font-size: calc(20 / 16 * 1rem);
+        line-height: 32px;
+        a {
+          color: general.$primary-blue;
+          text-decoration: none;
+          font-weight: 700;
+          &:hover{
+            color: general.$secondary-blue;  
+          }
+        }
+      }
+    }
+
+    .discover-items {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+
+      .discover-item {
+        color: general.$primary-blue;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        &:hover {
+            color: general.$secondary-blue;
+          }
+        .discover-item__icon {
+          width: 70px;
+          vertical-align: top;
+        }
+      }
+    }
+
+    .discover__cta {
+      display: inline-block;
+      margin-top: 80px;
+      padding: 15px 25px;
+      background: general.$primary-blue;
+      color: #fff;
+      text-decoration: none;
+      font-size: calc(18 / 16 * 1rem);
+      font-weight: 500;
+      border-radius: 5px;
+      transition: ease .3s;
+      &:hover {
+        background: general.$secondary-blue;
+      }
+    }
+  }
+}

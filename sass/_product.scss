@@ -1,0 +1,43 @@
+@use "general" as general;
+
+.product {
+  padding: 40px 0;
+  .product__title {
+    margin: 0;
+    font-size: general.$fontSize-pt;
+    font-weight: general.$font-weight-g;
+    text-align: center;
+  }
+
+  .product__wrap {
+    width: 90%;
+    margin: 60px auto 40px auto;
+    display: flex;
+    justify-content: space-between;
+    .product-card {
+      width: 31%;
+      text-align: center;
+      font-size: calc(18 / 16 * 1rem);
+      .product-card__icon {
+        width: 100px;
+        vertical-align: top;
+      }
+      .product-card__title {
+        margin: 25px 0 15px 0;
+        font-size: general.$fontSize-st;
+      }
+      .product-card__description {
+        margin: 0;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .product-cta-wrap {
+    text-align: center;
+    .product__cta {
+      color: general.$primary-blue;
+      text-decoration: none;
+    }
+  }
+}

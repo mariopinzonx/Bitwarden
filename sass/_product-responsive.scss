@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  .product {
+    .product__title {
+      font-size: calc(23 / 16 * 1rem);
+    }
+
+    .product__wrap {
+      flex-wrap: wrap;
+      gap: 30px;
+      .product-card {
+        width: 100%;
+      }
+    }
+  }
+}

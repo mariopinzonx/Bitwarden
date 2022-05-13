@@ -1,0 +1,28 @@
+@use "general" as general;
+.devices {
+  margin-top: 145px;
+  padding: 70px 0;
+  background-color: general.$primary-blue;
+  background-image: url("../images/digital-squares.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  color: #fff;
+  .devices__wrap {
+    margin-left: 80px;
+    padding-left: 55px;
+    width: 70%;
+    border-left: 5px solid #fff;
+
+    .devices__description {
+      margin: 0 0 30px 0;
+      font-size: calc(27 / 16 * 1rem);
+      line-height: 40px;
+    }
+
+    h3 {
+      font-family: "Playfair Display", serif;
+      font-size: calc(40 / 16 * 1rem);
+    }
+  }
+}

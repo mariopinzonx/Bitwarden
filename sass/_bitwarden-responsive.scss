@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .bitwarden {
+    .bitwarden__wrap {
+      .bitwarden-card {
+        .bitwarden-card-figure {
+          display: none;
+        }
+        .bitwarden-card-body {
+          width: 100%;
+          .bitwarden-card__title {
+            font-size: calc(30 / 16 * 1rem);
+          }
+        }
+      }
+    }
+  }
+}

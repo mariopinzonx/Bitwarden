@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="js/header.js"></script>
+    <script src="js/plans.js"></script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/icons/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Bitwarden Open Source Password Manager | BitWarden</title>
+</head>
+
+<body id="body">
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrap">
+                <nav class="nav">
+
+                    <a href="#" class="brand-link">
+                        <img src="images/logo-horizontal-white.svg" alt="" class="brand-link__image">
+                    </a>
+
+                    <a href="#" class="brand-link brand-link--logo">
+                        <img src="images/shield-white.svg" alt="" class="brand-link__image">
+                    </a>
+
+                    <div class="nav__wrap" id="navWrap">
+
+                        <ul class="nav-bar">
+                            <li class="nav-bar__item nav-bar__item--vertical">
+                                <a href="#" class="nav-bar__link">Home</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Products</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Download</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Pricing</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Help</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Blog</a>
+                            </li>
+                            <li class="nav-bar__item">
+                                <a href="#" class="nav-bar__link">Contact</a>
+                            </li>
+                            <li class="nav-bar__item nav-bar__item--vertical">
+                                <a href="#" class="nav-bar__link">Talk to Sales</a>
+                            </li>
+                            <li class="nav-bar__item nav-bar__item--vertical">
+                                <a href="#" class="nav-bar__link">Get Started</a>
+                            </li>
+                            <li class="nav-bar__item nav-bar__item--vertical">
+                                <a href="#" class="nav-bar__link">Log In</a>
+                            </li>
+                            <li class="nav-bar__item nav-bar__search-btn">
+                                <button class="nav-bar__search-btn" id="btnSearch">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </li>
+                        </ul>
+
+                        <div class="nav-bar-buttons">
+                            <a href="#" class="nav-bar-buttons__item">Talk to Sales</a>
+                            <a href="#" class="nav-bar-buttons__item">Get Started</a>
+                            <a href="#" class="nav-bar-buttons__item">
+                                Log In <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="nav-buttons__btn" id="btn-search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button class="nav-buttons__btn" id="menu">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                    </div>
+
+                </nav>
+            </div>
+
+            <div class="header-search" id="searchWrap">
+                <form action="#" class="form">
+                    <div class="form__wrap">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" name="search" id="search" class="form__input" placeholder="Search Site">
+                        <button type="button" class="form__btn" id="btnEsc">esc</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrap">
+
+                    <div class="hero-texts">
+                        <h1 class="hero-texts__title">The Most Trusted Open Source Password Manager for Business</h1>
+                        <p class="hero-texts__description">Bitwarden offers the easiest and safest way for teams and
+                            individuals to store and share sensitive data from any device.</p>
+                        <div class="hero-texts__wrap">
+                            <a href="#" class="hero__cta hero__cta--main">Start an Enterprise Trial</a>
+                            <a href="#" class="hero__cta hero__cta--second">Plans & Pricing</a>
+                        </div>
+                    </div>
+
+                    <figure class="hero-figure">
+                        <img src="images/hero.webp" alt="" class="hero-figure__img">
+                    </figure>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="notice">
+            <div class="container">
+                <div class="notice__wrap">
+
+                    <a href="#" class="notice-description">
+                        <div class="notice-description__wrap">
+                            <b>Bitwarden Expands MSP Offering:</b>
+                            <span>New Provider Portal Streamlines Cliente Management</span>
+                            <span class="color">Learn More <i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="product">
+            <div class="container">
+                <h2 class="product__title">Why choose Bitwarden for password management?</h2>
+
+                <div class="product__wrap">
+
+                    <article class="product-card">
+                        <img src="images/icon-encrypted.svg" alt="" class="product-card__icon">
+                        <h3 class="product-card__title">Trusted Security</h3>
+                        <p class="product-card__description">Your private information is protected with end-to-end
+                            encryption before it ever leaves your device.</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/icon-open-source.svg" alt="" class="product-card__icon">
+                        <h3 class="product-card__title">Open Source Transparency</h3>
+                        <p class="product-card__description">Bitwarden source code, features, and infrastructure
+                            security are vetted and improved by our global community.</p>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/icon-global.svg" alt="" class="product-card__icon">
+                        <h3 class="product-card__title">Global Access</h3>
+                        <p class="product-card__description">Access Bitwarden from anywhere, with any platform, in 40
+                            languages.</p>
+                    </article>
+
+                </div>
+
+                <div class="product-cta-wrap">
+                    <a href="#" class="product__cta">View Product Details <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="devices">
+            <div class="container">
+                <div class="devices__wrap">
+
+                    <p class="devices__description">Bitwarden works with almost any device and browser you can mention:
+                        Windows, Mac, Linux; iOS and Android; Chrome, Firefox, Safari, Edge, and many more niche
+                        browsers. That leaves you free to roam, unlike browser password managers.</p>
+
+                    <h3>Forbes</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="bitwarden">
+            <div class="container">
+                <div class="bitwarden__wrap">
+                    <article class="bitwarden-card">
+                        <figure class="bitwarden-card-figure">
+                            <img src="images/img-connected.svg" alt="" class="bitwarden-card-figure__img">
+                        </figure>
+
+                        <div class="bitwarden-card-body">
+                            <h2 class="bitwarden-card__title">Secure your passwords from any location or device</h2>
+                            <p class="bitwarden-card__description">Bitwarden gives you power to create and manage unique
+                                passwords, so you can strengthen privacy and boost productivity online from any device
+                                or
+                                location.</p>
+                            <div class="bitwarden-btn-wrap">
+                                <a href="#" class="bitwarden-card__cta">View Download Options <i
+                                        class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="bitwarden-card">
+                        <figure class="bitwarden-card-figure">
+                            <img src="images/img-safety.svg" alt="" class="bitwarden-card-figure__img">
+                        </figure>
+
+                        <div class="bitwarden-card-body">
+                            <h2 class="bitwarden-card__title">Enterprise-grade security and compliance</h2>
+                            <p class="bitwarden-card__description">Protect your online data using a password manager you
+                                can
+                                trust. Bitwarden conducts regular third-party security audits and is compliant with
+                                Privacy
+                                Shield, HIPAA, GDPR, CCPA, and SOC 2 security standards.</p>
+                            <div class="bitwarden-btn-wrap">
+                                <a href="#" class="bitwarden-card__cta">More about Bitwarden Security <i
+                                        class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="plans">
+            <div class="plans-header">
+                <div class="container">
+                    <div class="plans-header__wrap">
+                        <h2 class="plans__title">Bitwarden Plans and Pricing</h2>
+                        <div class="plan-buttons">
+                            <button class="plan-buttons__item active" id="btnBusinessPlan">Business</button>
+                            <button class="plan-buttons__item" id="btnPersonalPlan">Personal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="plans-body">
+                <div class="container">
+                    <span class="plans__notice"><i>Pricing shown in USD and based on an annual subscription.</i></span>
+
+                    <div class="business-plans plan-cards" id="BusinessPlan">
+                        <div class="plan-cards__wrap">
+                            <div class="plan-card">
+                                <a href="#" class="plan-card__cta">
+                                    <h4 class="plan-card__title">Teams Organization</h4>
+                                    <div class="plan-price">
+                                        <h5 class="plan-price__total"><sup>$</sup>3</h5>
+                                        <p class="plan-price__description">per month/per user</p>
+                                    </div>
+                                    <p class="plan-card__description">Share private date safely with coworkers,
+                                        across departments, or the entire company.</p>
+                                    <p class="plan-card__notice">Includes premium features for all users.</p>
+                                    <span class="plan__btn">Start Teams Free Trial</span>
+                                </a>
+                            </div>
+
+                            <div class="plan-card">
+                                <a href="#" class="plan-card__cta">
+                                    <h4 class="plan-card__title">Enterprise Organization</h4>
+                                    <div class="plan-price">
+                                        <h5 class="plan-price__total"><sup>$</sup>5</h5>
+                                        <p class="plan-price__description">per month/per user</p>
+                                    </div>
+                                    <p class="plan-card__description">Advanced functionalities including Enterprise
+                                        policies, SSO integration, Admin Password Reset and more.</p>
+                                    <p class="plan-card__notice">Includes premium features and complimentary
+                                        families plan for all users.</p>
+                                    <span class="plan__btn">Start Enterprise Free Trial</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="personal-plans plan-cards" id="PersonalPlan">
+                        <div class="personal-plans__wrap">
+
+                            <div class="personal-plans-category">
+                                <div class="line">
+                                    <span class="line__text">Individual</span>
+                                </div>
+                                <div class="plan-cards__wrap">
+
+                                    <div class="plan-card">
+                                        <a href="#" class="plan-card__cta">
+                                            <h4 class="plan-card__title">Basic Free Account</h4>
+                                            <div class="plan-price">
+                                                <h5 class="plan-price__total">Free</h5>
+                                                <p class="plan-price__description">Forever</p>
+                                            </div>
+                                            <p class="plan-card__description">Get the core features of a Bitwarden
+                                                personal
+                                                vault and manage your private data safely any location, device, and
+                                                device
+                                                type.
+                                            </p>
+                                            <span class="plan__btn">Create Free Account</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="plan-card">
+                                        <a href="#" class="plan-card__cta">
+                                            <h4 class="plan-card__title">Premium Account</h4>
+                                            <div class="plan-price">
+                                                <h5 class="plan-price__total"><sup>$</sup>10<sub>/yr</sub></h5>
+                                                <p class="plan-price__description">less than $1/mo</p>
+                                            </div>
+                                            <p class="plan-card__description">Gain access to premium features like
+                                                advanced
+                                                2FA, Emergency Access, Bitwarden Authenticator, and more.</p>
+                                            <span class="plan__btn">Create Premium Account</span>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="personal-plans-category">
+                                <div class="line">
+                                    <span class="line__text">Sharing</span>
+                                </div>
+                                <div class="plan-cards__wrap">
+                                    <div class="plan-card">
+                                        <a href="#" class="plan-card__cta">
+                                            <h4 class="plan-card__title">Free 2-Person Org</h4>
+                                            <div class="plan-price">
+                                                <h5 class="plan-price__total">Free</h5>
+                                                <p class="plan-price__description">Forever</p>
+                                            </div>
+                                            <p class="plan-card__description">Get the core features of a Bitwarden
+                                                personal
+                                                vault and securely share passwords and data with one other person.</p>
+                                            <p class="plan-card__notice">For you and a friend or partner</p>
+                                            <span class="plan__btn">Create Free Org</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="plan-card">
+                                        <a href="#" class="plan-card__cta">
+                                            <h4 class="plan-card__title">Families Organization</h4>
+                                            <div class="plan-price">
+                                                <h5 class="plan-price__total"><sup>$</sup>3.33<sub>/mo</sub></h5>
+                                                <p class="plan-price__description">for up to 6 users, billed annually
+                                                </p>
+                                            </div>
+                                            <p class="plan-card__description">Premium features and personal vaults for 6
+                                                users with unlimited sharing between them.</p>
+                                            <p class="plan-card__notice">For you and your family</p>
+                                            <span class="plan__btn">Start Free 7-Day Trial</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="plans-footer">
+                <div class="container">
+                    <a href="#" class="plans__cta">Compare Features and Pricing</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="discover">
+            <div class="container">
+                <div class="discover__wrap">
+                    <article class="discover-article">
+                        <h2 class="discover-article__title">Discover More About Bitwarden</h2>
+                        <p class="discover-article__description">Take control of your online security by creating your
+                            free
+                            Bitwarden account today. You can <a href="#">contact us</a> any time, we're always happy to
+                            help.</p>
+                    </article>
+
+                    <div class="discover-items">
+                        <a href="#" class="discover-item">
+                            <img src="images/icon-blog.svg" alt="" class="discover-item__icon">
+                            <span class="discover-item__description">Read Our Blog <i
+                                    class="fa-solid fa-angle-right"></i></span>
+                        </a>
+
+                        <a href="#" class="discover-item">
+                            <img src="images/icon-help.svg" alt="" class="discover-item__icon">
+                            <span class="discover-item__description">Help Center <i
+                                    class="fa-solid fa-angle-right"></i></span>
+                        </a>
+
+                        <a href="#" class="discover-item">
+                            <img src="images/icon-resources.svg" alt="" class="discover-item__icon">
+                            <span class="discover-item__description">Resources and Events <i
+                                    class="fa-solid fa-angle-right"></i></span>
+                        </a>
+                    </div>
+
+                    <a href="#" class="discover__cta">Create Your Free Account</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#"> <img src="images/logo-horizontal-white.svg" alt=""></a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-content-item">
+                    <h5 class="footer-content__title">Products</h5>
+                    <ul class="footer-content-list">
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">How Bitwarden Works</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Bitwarden Send</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Pricing for Business</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Pricing for Individuals</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Download Options</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Managed Service Providers</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-content-item">
+                    <h5 class="footer-content__title">Company</h5>
+                    <ul class="footer-content-list">
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">About</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Open Source</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Careers</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Events</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Media Sporlight</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Blog</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Partners</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-content-item">
+                    <h5 class="footer-content__title">Resources</h5>
+                    <ul class="footer-content-list">
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Resource Center</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link footer-content-list__link--underline">Community
+                                Forums</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Security Compliance</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Success Stories</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">User Reviews</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Newsfeed</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Subscribe to Updates</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-content-item">
+                    <h5 class="footer-content__title">Tools & Help</h5>
+                    <ul class="footer-content-list">
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Password Generator</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Password Strength Tester</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link footer-content-list__link--underline">Help
+                                Center</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Learning Center</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Talk to Sales</a>
+                        </li>
+                        <li class="footer-content-list__item">
+                            <a href="#" class="footer-content-list__link">Contact Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul class="footer-copyright">
+                    <li class="footer-copyright__item">
+                        <span>&copy;2022 Bitwarden, Inc.</span>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="#" class="footer-copyright__link">Terms</a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="#" class="footer-copyright__link">Privacy</a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="#" class="footer-copyright__link">Cookie</a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="#" class="footer-copyright__link">Settings</a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="#" class="footer-copyright__link">Sitemap</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-social-media">
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-reddit"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-solid fa-comment"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-facebook-square"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-mastodon"></i>
+                        </a>
+                    </li>
+
+                    <li class="footer-social-media__item">
+                        <a href="#" class="footer-social-media__link">
+                            <i class="fa-brands fa-twitch"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

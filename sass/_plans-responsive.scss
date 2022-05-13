@@ -1,0 +1,77 @@
+@media screen and(max-width: 1340px) {
+  .plans {
+    .plans-body {
+      .personal-plans {
+        .personal-plans__wrap {
+          .personal-plans-category {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .plans {
+    .plans-body {
+      .personal-plans {
+        .personal-plans__wrap {
+          flex-wrap: wrap;
+          .personal-plans-category {
+            width: 100%;
+            .line {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plans {
+    .plans-body {
+      .plan-cards {
+        .plan-cards__wrap {
+          flex-wrap: wrap;
+        }
+      }
+
+      .business-plans {
+        .plan-card {
+          width: 85%;
+        }
+      }
+
+      .personal-plans {
+        .personal-plans__wrap {
+          .personal-plans-category {
+            .plan-cards__wrap {
+              .plan-card {
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .plans {
+    .plans-header {
+      .plans-header__wrap {
+        .plan-buttons {
+          gap: 20px;
+          .plan-buttons__item {
+            padding: 14px 25px;
+            font-size: calc(15 / 16 * 1rem);
+          }
+        }
+      }
+    }
+  }
+}
